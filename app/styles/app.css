@@ -1,0 +1,30 @@
+.search-division{
+    position: relative;
+}
+.suggestion{
+    position: absolute;
+}
+.suggestion ul{
+    padding: 5px;
+}
+.suggestion li{
+    padding: 10px;
+}
+input[type=search]{
+    width: 100%;
+}
+.sug-title{
+    font-weight: bold;
+}
+.sug-img{
+    width: 50px;
+    height: 70px;
+    vertical-align: auto;
+}
+.sug-detail>p{
+    margin: 0;
+}
+.sug-img,
+.sug-detail{
+    display: inline-block;
+}

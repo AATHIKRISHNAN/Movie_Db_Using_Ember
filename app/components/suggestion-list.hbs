@@ -1,0 +1,11 @@
+<li>
+    <img class="sug-img img-thumbnail" src={{if @suggestion.i @suggestion.i.imageUrl (if (startswith @suggestion.id 'nm') "/assets/images/person-placeholder.png" "/assets/images/movie-placeholder.png")}} alt="image">
+    <div class="sug-detail">
+        <span class="sug-title">{{@suggestion.l}}</span>
+        <p>
+            {{@suggestion.y}}
+            <br>
+            {{@suggestion.s}}
+        </p>
+    </div>
+</li>

@@ -1,0 +1,18 @@
+<header class="bg-primary">
+    <div class="col-3 search-division">
+        <Input @type="search" @value={{this.searchQuery}} {{on 'keydown' this.getSuggestion}} />
+        <div class="suggestion">
+            <ul class="list-unstyled">
+                {{#if this.suggestions}}
+                    {{#each this.suggestions as |suggestion|}}
+                        <SuggestionList @suggestion={{suggestion}} />
+                    {{/each}}
+                
+                {{else}}
+                    <li>No suggestions available</li>
+                {{/if}}
+            </ul>
+        </div>
+    </div>
+</header>
+
